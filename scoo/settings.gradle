@@ -1,0 +1,4 @@
+include ':lib'
+include ':retrofitlibrary'
+include ':app'
+rootProject.name = "scoo"

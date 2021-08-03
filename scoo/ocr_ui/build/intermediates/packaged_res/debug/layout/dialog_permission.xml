@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:id="@+id/bg_relative"
+    >
+
+    <ImageView
+        android:id="@+id/iv_dialog_home_page_x"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:background="@drawable/home_page_message_cancel_bg_selector"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/dialog_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_dialog_home_page_title"
+            android:text="今日提示"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:id="@+id/rg_home_page_dialog_desc"-->
+                <!--android:layout_marginBottom="70dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/>-->
+
+
+            <Button
+                android:id="@+id/btn_home_page_dialog_sure"
+                android:text="确定"
+                android:background="@null"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_gravity="bottom"
+                android:textColor="#3b7be6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
