@@ -17,13 +17,13 @@ public class TestThreadThree {
                 System.out.println( now()+" t1 RUN");
                 System.out.println( now()+this.getName()+ " have：someObject");
               synchronized (someObject) {
-                  System.out.println( now()+this.getName()+ " have object：someObject");
+                  System.out.println( now()+this.getName()+ " have object:someObject");
                   try {
                       Thread.sleep(5000);
                   } catch (InterruptedException e) {
                       e.printStackTrace();
                   }
-                  System.out.println( now()+this.getName()+ " free object：someObject");
+                  System.out.println( now()+this.getName()+ " free object:someObject");
               }
             }
         };
