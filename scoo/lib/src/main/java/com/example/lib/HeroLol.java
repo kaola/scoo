@@ -22,8 +22,11 @@ public class HeroLol {
             System.out.println(hero.name + "die！");
         }
     }
-
-    public void recover() {
+    //回血
+    //直接在方法前面加上修饰符synchronized
+    //其所对应的同步对象，就是this
+    //和hurt方法达到的效果一样
+    public synchronized void recover() {
         hp = hp + 1;
     }
    //掉血
