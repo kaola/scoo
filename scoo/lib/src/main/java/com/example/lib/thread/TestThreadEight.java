@@ -40,9 +40,5 @@ public class TestThreadEight {
         };
         t2.start();
         String str = "nihoa";
-        String str1 = "nihoa";
-        String str3 = "nihoa";
-        String str34 = "nihoa";
-        String str35 = "nihoa";
     }
 }
