@@ -39,5 +39,6 @@ public class TestThreadEight {
             }
         };
         t2.start();
+        String str = "nihoa";
     }
 }
