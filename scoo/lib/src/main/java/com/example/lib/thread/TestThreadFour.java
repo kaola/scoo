@@ -2,6 +2,9 @@ package com.example.lib.thread;
 
 import com.example.lib.HeroLol;
 
+import java.util.Hashtable;
+import java.util.Vector;
+
 public class TestThreadFour {
 
     public static void main(String[] args) {
@@ -20,9 +23,10 @@ public class TestThreadFour {
               @Override
               public void run() {
                   //任何线程要修改hp的值，必须先占用someObject
-                  synchronized (someObject) {
+//                  synchronized (someObject) {
+                     //recover自带synchronized
                       gareen.recover();
-                  }
+//                  }
 
                   try {
                       Thread.sleep(100);
@@ -40,9 +44,11 @@ public class TestThreadFour {
               @Override
               public void run() {
                   //任何线程要修改hp的值，必须先占用someObject
-                  synchronized (someObject) {
+                  //使用gareen作为synchronized
+                  //在方法hurt中有synchronized(this)
+//                  synchronized (someObject) {
                       gareen.hurt();
-                  }
+//                  }
 
                   try {
                       Thread.sleep(100);
